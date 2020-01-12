@@ -1,0 +1,62 @@
+"C:\Program Files\Java\jdk1.8.0_66\bin\java" -Didea.launcher.port=7532 "-Didea.launcher.bin.path=C:\Program Files (x86)\JetBrains\IntelliJ IDEA 15.0.6\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar;C:\Users\Jupiter\Google Drive\LukeNet\MEETIS\out\production\MEETIS;C:\Users\Jupiter\Google Drive\LukeNet\MEETIS\lib\jsoup-1.9.1.jar;C:\Users\Jupiter\Google Drive\LukeNet\MEETIS\lib\mysql-connector-java-5.1.36-bin.jar;C:\Users\Jupiter\Google Drive\LukeNet\MEETIS\lib\twitter4j-core-4.0.4-20150623.090320-9.jar;C:\Users\Jupiter\Google Drive\LukeNet\MEETIS\src\resources;C:\Users\Jupiter\Google Drive\LukeNet\MEETIS\lib\commons-net-3.4.jar;C:\Program Files (x86)\JetBrains\IntelliJ IDEA 15.0.6\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain MEETIS
+sun.awt.image.ImageFormatException: Unsupported color conversion request
+	at sun.awt.image.JPEGImageDecoder.readImage(Native Method)
+	at sun.awt.image.JPEGImageDecoder.produceImage(JPEGImageDecoder.java:141)
+	at sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+	at sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:205)
+	at sun.awt.image.ImageFetcher.run(ImageFetcher.java:169)
+
+	Exception in thread "Thread-21" java.lang.StringIndexOutOfBoundsException
+	at java.lang.AbstractStringBuilder.delete(AbstractStringBuilder.java:733)
+	at java.lang.StringBuilder.delete(StringBuilder.java:244)
+	at compoundPhraseFormat(CentralCom.java:1472)
+	at CentralCom.hashTag(CentralCom.java:1967)
+	at CentralCom$15$7.run(CentralCom.java:2545)
+
+	Exception in thread "Thread-21" java.lang.StringIndexOutOfBoundsException: String index out of range: 9
+	at java.lang.AbstractStringBuilder.charAt(AbstractStringBuilder.java:210)
+	at java.lang.StringBuilder.charAt(StringBuilder.java:76)
+	at CentralCom.compoundPhraseFormat(CentralCom.java:1464)
+	at CentralCom.hashTag(CentralCom.java:1961)
+	at CentralCom$15$7.run(CentralCom.java:2539)
+
+	Exception in thread "Thread-20" java.lang.IllegalArgumentException: Malformed URL:  http://www.cnbc.com/id/100727362/device/rss/rss.html
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:76)
+	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:36)
+	at org.jsoup.Jsoup.connect(Jsoup.java:73)
+	at CentralCom.buildURL(CentralCom.java:1517)
+	at CentralCom.access$1000(CentralCom.java:37)
+	at CentralCom$15$6.run(CentralCom.java:2403)
+Caused by: java.net.MalformedURLException: no protocol: %20http://www.cnbc.com/id/100727362/device/rss/rss.html
+	at java.net.URL.<init>(URL.java:586)
+	at java.net.URL.<init>(URL.java:483)
+	at java.net.URL.<init>(URL.java:432)
+	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:74)
+	... 5 more
+
+sun.awt.image.ImageFormatException: Unsupported color conversion request
+	at sun.awt.image.JPEGImageDecoder.readImage(Native Method)
+	at sun.awt.image.JPEGImageDecoder.produceImage(JPEGImageDecoder.java:141)
+	at sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+	at sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:205)
+	at sun.awt.image.ImageFetcher.run(ImageFetcher.java:169)
+sun.awt.image.ImageFormatException: Unsupported color conversion request
+	at sun.awt.image.JPEGImageDecoder.readImage(Native Method)
+	at sun.awt.image.JPEGImageDecoder.produceImage(JPEGImageDecoder.java:141)
+	at sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+	at sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:205)
+	at sun.awt.image.ImageFetcher.run(ImageFetcher.java:169)
+sun.awt.image.ImageFormatException: Unsupported color conversion request
+	at sun.awt.image.JPEGImageDecoder.readImage(Native Method)
+	at sun.awt.image.JPEGImageDecoder.produceImage(JPEGImageDecoder.java:141)
+	at sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+	at sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:205)
+	at sun.awt.image.ImageFetcher.run(ImageFetcher.java:169)
+sun.awt.image.ImageFormatException: Unsupported color conversion request
+	at sun.awt.image.JPEGImageDecoder.readImage(Native Method)
+	at sun.awt.image.JPEGImageDecoder.produceImage(JPEGImageDecoder.java:141)
+	at sun.awt.image.InputStreamImageSource.doFetch(InputStreamImageSource.java:269)
+	at sun.awt.image.ImageFetcher.fetchloop(ImageFetcher.java:205)
+	at sun.awt.image.ImageFetcher.run(ImageFetcher.java:169)
+
+	

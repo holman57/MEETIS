@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Class-Path: tesseract-4.0.0-1.5-linux-ppc64le.jar tesseract-4.0.0-1.5-
+ macosx-x86_64.jar tesseract-4.0.0-1.5-windows-x86.jar leptonica-1.78.
+ 0-1.5-linux-armhf.jar leptonica-1.78.0-1.5-windows-x86_64.jar leptoni
+ ca-1.78.0-1.5-android-arm64.jar leptonica-platform-1.78.0-1.5.jar lep
+ tonica-1.78.0-1.5-linux-x86.jar leptonica-1.78.0-1.5-android-arm.jar 
+ leptonica-1.78.0-1.5-linux-x86_64.jar tesseract-4.0.0-1.5-android-arm
+ 64.jar leptonica-1.78.0-1.5-android-x86.jar tesseract-4.0.0-1.5.jar l
+ eptonica-1.78.0-1.5-android-x86_64.jar leptonica-1.78.0-1.5-windows-x
+ 86.jar leptonica-1.78.0-1.5-macosx-x86_64.jar tesseract-4.0.0-1.5-and
+ roid-arm.jar tesseract-4.0.0-1.5-windows-x86_64.jar tesseract-4.0.0-1
+ .5-android-x86_64.jar tesseract-4.0.0-1.5-linux-armhf.jar tesseract-4
+ .0.0-1.5-linux-x86.jar leptonica-1.78.0-1.5.jar tesseract-4.0.0-1.5-a
+ ndroid-x86.jar leptonica-1.78.0-1.5-linux-ppc64le.jar javacpp-1.5.jar
+  tesseract-platform-4.0.0-1.5.jar tesseract-4.0.0-1.5-linux-x86_64.ja
+ r
+Main-Class: BasicExample
+

@@ -1,0 +1,2 @@
+You need to change the video resolution. The current resolution is (640x360), which is not supported for this configuration. The expected video resolution is (1280x720).
+The stream's current bitrate (724.00 Kbps) is lower than the recommended bitrate. We recommend that you use a stream bitrate of 2500 Kbps.

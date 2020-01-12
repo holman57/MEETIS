@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="OCRScannerDemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/OCRScannerDemo_jar</output-path>
+    <root id="archive" name="OCRScannerDemo.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="OCRScannerDemo" />
+      <element id="library" level="project" name="javaocr-core-1.0" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javaocr/javaocr-core-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javaocr/javaocr-plugin-awt-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javaocr/javaocr-plugin-cluster-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javaocr/javaocr-plugin-fir-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javaocr/javaocr-plugin-moment-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javaocr/javaocr-plugin-morphology-1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

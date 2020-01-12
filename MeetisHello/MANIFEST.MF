@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: MeetisHello
+Class-Path: lib/h2-1.4.186.jar lib/cmu_time_awb.jar lib/cmu_us_kal.jar
+  lib/cmudict04.jar lib/cmulex.jar lib/cmutimelex.jar lib/en_us.jar li
+ b/freetts-jsapi10.jar lib/freetts.jar

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: cmu_time_awb.jar cmu_us_kal.jar en_us.jar freetts-jsapi10.
+ jar freetts.jar mbrola.jar jsapi.jar mbrola.jar jsapi.jar cmu_us_kal.
+ jar en_us.jar freetts-jsapi10.jar freetts.jar
+Main-Class: Verbalize
+

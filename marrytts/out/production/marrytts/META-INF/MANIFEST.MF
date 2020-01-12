@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: marytts-client-5.2-jar-with-dependencies.jar marytts-runti
+ me-5.2-jar-with-dependencies.jar marytts-lang-en-5.2.jar voice-cmu-sl
+ t-hsmm-5.2.jar
+Main-Class: Main
+

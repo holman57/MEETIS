@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Verbalize">
+    <output-path>$PROJECT_DIR$/../MeetisTV</output-path>
+    <root id="archive" name="Verbalize.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Verbalize" />
+      <element id="library" level="project" name="cmu_time_awb" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/cmu_us_kal.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/en_us.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/freetts-jsapi10.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/jsapi.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/freetts.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/mbrola.jar" />
+      <element id="library" level="project" name="mbr301d" />
+      <element id="library" level="project" name="mbr301d1" />
+      <element id="library" level="project" name="cmu_us_kal" />
+      <element id="library" level="project" name="cmudict04" />
+      <element id="library" level="project" name="cmulex" />
+      <element id="library" level="project" name="cmutimelex" />
+      <element id="library" level="project" name="en_us" />
+      <element id="library" level="project" name="freetts-jsapi10" />
+      <element id="library" level="project" name="freetts" />
+      <element id="library" level="project" name="jsapi" />
+      <element id="library" level="project" name="mbrola" />
+      <element id="library" level="project" name="mbr302a" />
+      <element id="dir-copy" path="$PROJECT_DIR$/../MeetisTV/lib" />
+    </root>
+  </artifact>
+</component>

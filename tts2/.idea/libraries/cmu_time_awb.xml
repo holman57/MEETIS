@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="cmu_time_awb">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/freetts-1.2/lib/cmu_time_awb.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

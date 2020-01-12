@@ -1,0 +1,1 @@
+http://www.cnbc.com/id/100727362/device/rss/rss.html, http://feeds.feedburner.com/zerohedge/feed?format=xml, http://www.reddit.com/r/news/.rss, http://feeds.reuters.com/Reuters/worldNews?format=xml, http://warnewsupdates.blogspot.com/, http://news.yahoo.com/, https://news.google.com/
