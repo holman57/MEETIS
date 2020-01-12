@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="Count:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Count</output-path>
-    <root id="archive" name="Count.jar">
-      <element id="module-output" name="Count" />
-    </root>
-  </artifact>
-</component>

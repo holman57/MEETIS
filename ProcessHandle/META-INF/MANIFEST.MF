@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: jna-platform-5.3.1.jar jna-5.3.1.jar jna-5.3.1.jar jna-pla
- tform-5.3.1.jar
-Main-Class: MEETIS_RUNTIME
-

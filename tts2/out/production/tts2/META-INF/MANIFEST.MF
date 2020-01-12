@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: en_us.jar cmulex.jar mbrola.jar freetts.jar cmudict04.jar 
- cmu_us_kal.jar cmutimelex.jar cmu_time_awb.jar freetts-jsapi10.jar JT
- ime.jar Client.jar Player.jar Server.jar HelloWorld.jar MixedVoices.j
- ar WebStartClock.jar EmacspeakServer.jar FreeTTSHelloWorld.jar FreeTT
- SEmacspeakServer.jar mbrola.jar
-Main-Class: TextSpeech
-

@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="mbrola">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../mbrola.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
