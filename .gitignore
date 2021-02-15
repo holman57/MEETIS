@@ -1,5 +1,6 @@
 # Hide the access tokens and other sensitive information
 /secretes/
+/secretes/env.py
 
 # Default ignored files
 /shelf/

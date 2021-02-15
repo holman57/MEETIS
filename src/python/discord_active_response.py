@@ -27,7 +27,7 @@ def generate(input_context):
                              top_p=0.95,
                              no_repeat_ngram_size=2,
                              early_stopping=True,
-                             temperature=0.9,
+                             temperature=0.8,
                              bad_words_ids=bad_words_ids)
     response = tokenizer.decode(outputs[0], skip_special_tokens=True)
     print(response)
