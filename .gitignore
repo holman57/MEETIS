@@ -1,3 +1,6 @@
+# Hide the access tokens and other sensitive information
+/secretes/
+
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -10,5 +13,5 @@
 /httpRequests/
 
 # Ignore the IDE
-.idea
+.idea/
 
