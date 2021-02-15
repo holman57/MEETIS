@@ -1,12 +1,13 @@
 import discord
 import torch
 import time
-from secret.discord_secrets import DISCORD_TOKEN, TEST_GUILD
+from secret.discord_secrets import DISCORD_TOKEN
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
 model = AutoModelForCausalLM.from_pretrained("gpt2")
-bad_words_ids = [tokenizer(bad_word).input_ids for bad_word in ["idiot", "stupid", "shut up"]]
+bad_words_ids = [tokenizer(bad_word).input_ids for bad_word in
+                 ["idiot", "stupid", "shut up"]]
 client = discord.Client()
 active = []
 
@@ -14,7 +15,10 @@ active = []
 def generate(input_context):
     if 'meetis' in input_context:
         input_context = input_context.replace('meetis', '')
-    if 'hey' in input_context or 'hello' in input_context or 'sup ' in input_context or "what's up" in input_context:
+    if 'hey' in input_context or \
+            'hello' in input_context or \
+            'sup ' in input_context or \
+            "what's up" in input_context:
         if 'they' not in input_context:
             input_context = 'The AI wanted to say hello so it said, '
     input_ids = tokenizer(input_context, return_tensors="pt").input_ids
@@ -34,7 +38,7 @@ def generate(input_context):
     response = response[len(input_context):]
     if '\n' in response:
         for line in response.split('\n'):
-            if len(line) < 6:
+            if len(line) < 5:
                 continue
             response = line
             break
@@ -44,9 +48,8 @@ def generate(input_context):
 @client.event
 async def on_ready():
     for guild in client.guilds:
-        if guild.name == TEST_GUILD:
-            break
-    print(f'{client.user} is connected to the following guild: {guild.name} (id: {guild.id})')
+        print(f'{client.user} is connected to the following guild: '
+              f'{guild.name} (id: {guild.id})')
 
 
 @client.event
@@ -68,7 +71,8 @@ async def on_message(message):
     for act in active:
         if act[0] == message.author:
             elapsed = message_time - act[1]
-            print(f"Last message from {message.author} sent: {elapsed:.2f}s ago")
+            print(f"Last message from {message.author} "
+                  f"sent: {elapsed:.2f}s ago")
             if elapsed > 30:
                 active.remove(act)
             else:
