@@ -1,4 +1,0 @@
-
-DISCORD_TOKEN = 'ODEwNjU4NzI2MTQyMDE3NTQ2.YCm2xQ.3uRe-gI1rHUJDQCAV-kWDrMeyuI'
-TEST_GUILD = 'Testing and Development'
-
