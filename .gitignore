@@ -1,6 +1,6 @@
 # Hide the access tokens and other sensitive information
-/secretes/
-/secretes/env.py
+/secret/
+/secret/discord_secrets.py
 
 # Default ignored files
 /shelf/

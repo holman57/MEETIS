@@ -1,7 +1,7 @@
 import discord
 import torch
 import time
-from secretes.env import DISCORD_TOKEN, TEST_GUILD
+from secret.discord_secrets import DISCORD_TOKEN, TEST_GUILD
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
