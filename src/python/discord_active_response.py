@@ -4,8 +4,8 @@ import time
 from secret.discord_secrets import DISCORD_TOKEN
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-tokenizer = AutoTokenizer.from_pretrained("gpt2")
-model = AutoModelForCausalLM.from_pretrained("gpt2")
+tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-large")
+model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-large")
 bad_words_ids = [tokenizer(bad_word).input_ids for bad_word in
                  ["idiot", "stupid", "shut up"]]
 client = discord.Client()
@@ -15,25 +15,27 @@ active = []
 def generate(input_context):
     if 'meetis' in input_context:
         input_context = input_context.replace('meetis', '')
-    if 'hey' in input_context or \
-            'hello' in input_context or \
-            'sup ' in input_context or \
-            "what's up" in input_context:
-        if 'they' not in input_context:
-            input_context = 'The AI wanted to say hello so it said, '
-    input_ids = tokenizer(input_context, return_tensors="pt").input_ids
+    # if 'hey' in input_context or \
+    #         'hello' in input_context or \
+    #         'sup ' in input_context or \
+    #         "what's up" in input_context:
+    #     if 'they' not in input_context:
+    #         input_context = 'The AI wanted to say hello so it said, '
+    input_ids = tokenizer(input_context + tokenizer.eos_token, return_tensors="pt").input_ids
     outputs = model.generate(input_ids=input_ids,
                              min_length=3,
-                             max_length=100,
+                             max_length=1000,
                              do_sample=True,
                              num_beams=4,
                              top_k=50,
+                             pad_token_id=tokenizer.eos_token_id,
                              top_p=0.95,
                              no_repeat_ngram_size=2,
                              early_stopping=True,
                              temperature=0.8,
                              bad_words_ids=bad_words_ids)
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    response = tokenizer.decode(outputs[0],
+                                skip_special_tokens=True)
     print(response)
     response = response[len(input_context):]
     if '\n' in response:
